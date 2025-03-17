@@ -63,10 +63,10 @@
 
 Este kit pode ser usado para criar documentação de produtos, sites empresariais e guias.
 
-![Tela Principal](./public/screens/screen-1.png)
+![Tela Principal](./public/screens/screen-10.png)
 _Tela Principal_
 
-![Tela de Documento](./public/screens/screen-2.png)
+![Tela de Documento](./public/screens/screen-12.png)
 _Tela de Documento_
 
 
