@@ -1,21 +1,21 @@
 ---
-title: Installation
-description: This guide covers the installation of Documents and how to edit your new project.
-keywords: ["installation", "github", "node", "guide", "nextjs", "documents"]
+title: Instalação
+description: Este guia abrange a instalação do Documents e como editar seu novo projeto.
+keywords: ["instalação", "github", "node", "guia", "nextjs", "documents"]
 ---
 
-To install and edit the Documents, you need to have several prerequisites in place. Here's a list of all the essential pre-requisites
-for setting up and working on this project.
+Para instalar e editar o Documents, você precisa ter vários pré-requisitos em vigor. Aqui está uma lista de todos os pré-requisitos essenciais
+para configurar e trabalhar neste projeto.
 
-## Prerequisites
+## Pré-requisitos
 
 <Step>
-<StepItem title="System Requirements">
+<StepItem title="Requisitos do Sistema">
 
-- **Node.js:** Make sure you have Node.js installed. The project uses `npm`, which comes with Node.js. Install Node.js from here.
-- **NPM or Yarn:** Since the project uses `npm` commands, ensure that npm is installed with Node.js. Alternatively, you can use Yarn if preferred.
+- **Node.js:** Certifique-se de ter o Node.js instalado. O projeto usa `npm`, que vem com o Node.js. Instale o Node.js daqui.
+- **NPM ou Yarn:** Como o projeto usa comandos `npm`, certifique-se de que o npm está instalado com o Node.js. Alternativamente, você pode usar Yarn se preferir.
 
-To verify installation, run:
+Para verificar a instalação, execute:
 
 ```bash
 node -v
@@ -24,74 +24,74 @@ npm -v
 
 </StepItem>
 <StepItem title="Git">
-You need to have Git installed to clone the repository. Download Git from [here](https://git-scm.com/).
+Você precisa ter o Git instalado para clonar o repositório. Baixe o Git [aqui](https://git-scm.com/).
 
 ```bash
 git --version
 ```
 
 </StepItem>
-<StepItem title="Code Editor">
-You’ll need a code editor to work on the project. Common options include:
+<StepItem title="Editor de Código">
+Você precisará de um editor de código para trabalhar no projeto. Opções comuns incluem:
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [WebStorm](https://www.jetbrains.com/webstorm/)
-- Any other text editor you prefer.
+- Qualquer outro editor de texto de sua preferência.
 
 </StepItem>
-<StepItem title="Required Knowledge">
-- **Next.js:** Since this is a Next.js project, you should be familiar with Next.js basics.
-- **React:** The project uses React, so understanding React's component structure and hooks will help.
-- **TypeScript:** The project is written in TypeScript, so you should have a basic understanding of it.
-- **Tailwind:** The project uses Tailwind CSS for styling.
-- **MDX:** Markdown + JSX (MDX) is used for writing documentation.
+<StepItem title="Conhecimento Necessário">
+- **Next.js:** Como este é um projeto Next.js, você deve estar familiarizado com os conceitos básicos do Next.js.
+- **React:** O projeto usa React, então entender a estrutura de componentes e hooks do React será útil.
+- **TypeScript:** O projeto é escrito em TypeScript, então você deve ter um entendimento básico dele.
+- **Tailwind:** O projeto usa Tailwind CSS para estilização.
+- **MDX:** Markdown + JSX (MDX) é usado para escrever a documentação.
 
 </StepItem>
 </Step>
 
-## Installation
+## Instalação
 
 <Step>
-<StepItem title="Clone the Repository">
-First, clone the repository to your local machine using Git:
+<StepItem title="Clonar o Repositório">
+Primeiro, clone o repositório para sua máquina local usando Git:
 
 ```bash
 git clone https://github.com/rubixvi/rubix-documents.git
 ```
 
-Change the directory to the project folder:
+Mude para o diretório do projeto:
 
 ```bash
 cd rubix-documents
 ```
 
 </StepItem>
-<StepItem title="Install Dependencies">
-Use npm to install all the required dependencies:
+<StepItem title="Instalar Dependências">
+Use npm para instalar todas as dependências necessárias:
 
 ```bash
 npm install
 ```
 
-This will install all the dependencies listed in the package.json file, including:
+Isso instalará todas as dependências listadas no arquivo package.json, incluindo:
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
-- MDX components
-- Other dependencies like ESLint, PostCSS, Husky, etc.
+- Componentes MDX
+- Outras dependências como ESLint, PostCSS, Husky, etc.
 
 </StepItem>
 
-<StepItem title="Running the Development Server">
-Start the development server by running:
+<StepItem title="Executando o Servidor de Desenvolvimento">
+Inicie o servidor de desenvolvimento executando:
 
 ```bash
 npm run dev
 ```
 
-This will start the local server, and you can open your browser at:
+Isso iniciará o servidor local, e você poderá abrir seu navegador em:
 
 ```arduino
 http://localhost:3000
@@ -99,38 +99,38 @@ http://localhost:3000
 
 </StepItem>
 
-<StepItem title="Editing the Project">
-  - **MDX Files:** Documentation content is stored in `contents/docs`.
-  - **Components:** You can edit React components in the `components/` directory.
-  - **Tailwind:** Tailwind styling are managed in `tailwind.config.ts` and `app/globals.css`.
+<StepItem title="Editando o Projeto">
+  - **Arquivos MDX:** O conteúdo da documentação está armazenado em `contents/docs`.
+  - **Componentes:** Você pode editar componentes React no diretório `components/`.
+  - **Tailwind:** As estilizações do Tailwind são gerenciadas em `tailwind.config.ts` e `app/globals.css`.
 
-To make any changes to the project, open the files in your editor and modify them as needed.
+Para fazer alterações no projeto, abra os arquivos em seu editor e modifique-os conforme necessário.
 
-<Note title="Required" type="danger">
-  The project's search functionality relies on the Husky's automation to build
-  `search-data/documents.json` ensure git commit is performed to generate this
-  file.
+<Note title="Obrigatório" type="danger">
+  A funcionalidade de busca do projeto depende da automação do Husky para construir
+  `search-data/documents.json`. Certifique-se de realizar um commit git para gerar este
+  arquivo.
 </Note>
 
 </StepItem>
-<StepItem title="Building for Production">
-Once you’ve made your changes and want to build the project for production:
+<StepItem title="Construindo para Produção">
+Depois de fazer suas alterações e quiser construir o projeto para produção:
 
 ```bash
 npm run build
 ```
 
-This will generate a production-ready build of the app.
+Isso gerará uma build pronta para produção do aplicativo.
 
 </StepItem>
-<StepItem title="Running Production Server">
-To run the production server:
+<StepItem title="Executando o Servidor de Produção">
+Para executar o servidor de produção:
 
 ```bash
 npm run start
 ```
 
-The production app will be available at:
+O aplicativo de produção estará disponível em:
 
 ```arduino
 http://localhost:3000
@@ -139,21 +139,21 @@ http://localhost:3000
 </StepItem>
 </Step>
 
-## Optional
+## Opcional
 
 <Step>
-<StepItem title="Deploying to Vercel">
-This project is optimized for Vercel deployment. To deploy to Vercel:
+<StepItem title="Implantando no Vercel">
+Este projeto é otimizado para implantação no Vercel. Para implantar no Vercel:
 
-- Go to [vercel.com](https://vercel.com/) and sign up.
-- Link your GitHub repository and deploy the project.
-- Vercel will handle the build process for you automatically.
+- Acesse [vercel.com](https://vercel.com/) e faça login.
+- Vincule seu repositório GitHub e implante o projeto.
+- O Vercel cuidará do processo de build automaticamente para você.
 </StepItem>
-<StepItem title="Linting and Pre-commit Hooks">
-The project uses ESLint for linting and Husky for Git hooks. These tools are configured automatically, but you can customize them in `.eslintrc.json` and `.husky` directories.
+<StepItem title="Linting e Hooks de Pré-commit">
+O projeto usa ESLint para linting e Husky para Git hooks. Essas ferramentas são configuradas automaticamente, mas você pode personalizá-las nos diretórios `.eslintrc.json` e `.husky`.
 </StepItem>
 </Step>
 
-## Important Information
+## Informações Importantes
 
-The project's search functionality relies on the Husky's automation to build `search-data/documents.json` ensure git commit is performed to generate this file.
+A funcionalidade de busca do projeto depende da automação do Husky para construir `search-data/documents.json`. Certifique-se de realizar um commit git para gerar este arquivo.
