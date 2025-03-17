@@ -69,17 +69,6 @@ _Tela Principal_
 ![Tela de Documento](./public/screens/screen-2.png)
 _Tela de Documento_
 
-![Rodapé do Documento](./public/screens/screen-3.png)
-_Rodapé do Documento_
-
-![Busca de Documentos](./public/screens/screen-4.png)
-_Busca de Documentos_
-
-![Tela Principal Modo Escuro](./public/screens/screen-5.png)
-_Tela Principal em Modo Escuro_
-
-![Tela de Documento Modo Escuro](./public/screens/screen-6.png)
-_Tela de Documento em Modo Escuro_
 
 ## Funcionalidades
 
